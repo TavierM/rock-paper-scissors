@@ -4,8 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body style="background-color: #22303f">
+    <section class="heroheader">
+      <div>
+        <h1 class="h1">Rock Paper Scissors Game</h1>
+        <p class="body">Basic Practice Project</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div
+          class="modal"
+          style="
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          "
+        >
+          <h2 class="h2">Choose your Weapon</h2>
+          <p class="body">Pick Rock, Paper or Scissors and may the best win!</p>
+          <div class="hflex">
+            <button class="choiceBtn" id="rockBtn">Rock</button>
+            <button class="choiceBtn" id="paperBtn">Paper</button>
+            <button class="choiceBtn" id="scissorsBtn">Scissors</button>
+            <div class="body" id="output-results">Waiting for updates...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="alt.js"></script>
+  </body>
 </html>

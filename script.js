@@ -59,4 +59,14 @@ function playGame() {
   }
 }
 
+//UI
+
+const choiceBtn = document.getElementById("rockBtn");
+const choiceBtn = document.getElementById("paperBtn");
+const choiceBtn = document.getElementById("scissorsBtn");
+
+choiceBtn.addEventListener("click", () => handleClick("Rock"));
+choiceBtn.addEventListener("click", () => handleClick("Paper"));
+choiceBtn.addEventListener("click", () => handleClick("Scissors"));
+
 playGame();

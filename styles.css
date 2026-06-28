@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: whitesmoke;
+}
+
+.h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: whitesmoke;
+}
+
+.h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  color: whitesmoke;
+}
+
+.h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: whitesmoke;
+}
+
+.h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.heroheader {
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: #15202d;
+}
+
+.container {
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.modal {
+  margin: auto;
+  max-width: 900px;
+  background-color: #15202d;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(71, 81, 110, 0.39);
+  padding: 32px;
+  box-shadow: rgba(18, 24, 41, 0.2) 0px 2px 8px 0px;
+}
+
+.hflex {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.choiceBtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 16px;
+  background-color: #22303f;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(71, 81, 110, 0.39);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.choiceBtn:hover {
+  background-color: #15202d;
+  cursor: pointer;
+}
