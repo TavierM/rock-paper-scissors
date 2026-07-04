@@ -3,39 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <meta
+      name="A practice project of the Rock Paper Scissors game"
+      content="Practice Project by Tavier Maldonado"
+    />
+
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (CDN, swap for build pipeline in production) -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="background-color: #22303f">
-    <section class="heroheader">
-      <div>
-        <h1 class="h1">Rock Paper Scissors Game</h1>
-        <p class="body">Basic Practice Project</p>
-      </div>
-    </section>
+  <body>
+    <header class="header" style="flex-direction: column; text-align: center">
+      <p class="leading">Best of Three isn't a rule, it's a mood.</p>
+      <h1 class="h1">Rock Paper Scissors</h1>
+      <p>Practice Project by Tavier Maldonado</p>
+    </header>
 
-    <section>
-      <div class="container">
-        <div
-          class="modal"
-          style="
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-          "
-        >
-          <h2 class="h2">Choose your Weapon</h2>
-          <p class="body">Pick Rock, Paper or Scissors and may the best win!</p>
-          <div class="hflex">
-            <button class="choiceBtn" id="rockBtn">Rock</button>
-            <button class="choiceBtn" id="paperBtn">Paper</button>
-            <button class="choiceBtn" id="scissorsBtn">Scissors</button>
-            <div class="body" id="output-results">Waiting for updates...</div>
+    <main class="main">
+      <section class="container">
+        <div class="scoreboardContainer">
+          <div class="scoreCell">
+            <h2 class="h2" id="score">0</h2>
+            <p>Win</p>
+          </div>
+          <div class="scoreCell">
+            <h2 class="h2" id="score">0</h2>
+            <p>Loss</p>
+          </div>
+          <div class="scoreCell">
+            <h2 class="h2" id="score">0</h2>
+            <p>Tie</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="container">
+        <div class="vsContainer">
+          <div class="vsGrid">
+            <div class="circleAvatar">
+              <h3 class="h3">You</h3>
+            </div>
+            <div><h2 class="h2">VS</h2></div>
+            <div class="circleAvatar">
+              <h3 class="h3">Computer</h3>
+            </div>
+          </div>
+          <div
+            class="divider"
+            style="padding-top: 12px; padding-bottom: 12px"
+          ></div>
+          <div style="padding-top: 25px">
+            <h3 class="h2">You Win This Round!</h3>
+            <p>Paper covers Rock</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="vsContainer">
+          <div> <p>Make Your Move</p> </div>
+          <div class="buttons">
+            <button class="optionBtn" id="rockBtn">Rock</button>
+            <button class="optionBtn" id="paperBtn">Paper</button>
+            <button class="optionBtn" id="scissorBtn">Scissors</button>
+          </div>
+
+            <button class="primaryBtn" id="restartBtn">Play Again?</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
     <script src="alt.js"></script>
   </body>
 </html>
